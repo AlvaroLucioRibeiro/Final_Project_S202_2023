@@ -1,0 +1,41 @@
+CREATE (concessionaria:Concessionaria {nome: "Consessionária Sr. Dito"})
+
+CREATE (motor_pulse:Motor {tipo: "2.0", potencia: 150, cavalos: 200, combustivel: "Gasolina"})
+CREATE (car_pulse:Car {marca: "Fiat", modelo: "Pulse", ano: 2022, preco: 110000, cor: "Branco"})
+CREATE (car_pulse)-[:PERTENCE]->(concessionaria)
+CREATE (car_pulse)-[:TEM]->(motor_pulse)
+
+CREATE (motor_uno:Motor {tipo: "1.0", potencia: 80, cavalos: 100, combustivel: "Flex"})
+CREATE (car_uno:Car {marca: "Fiat", modelo: "Uno Mille", ano: 2021, preco: 35000, cor: "Prata"})
+CREATE (car_uno)-[:PERTENCE]->(concessionaria)
+CREATE (car_uno)-[:TEM]->(motor_uno)
+
+CREATE (motor_gol:Motor {tipo: "1.6", potencia: 110, cavalos: 140, combustivel: "Gasolina"})
+CREATE (car_gol:Car {marca: "Volkswagen", modelo: "Gol G5", ano: 2010, preco: 25000, cor: "Preto"})
+CREATE (car_gol)-[:PERTENCE]->(concessionaria)
+CREATE (car_gol)-[:TEM]->(motor_gol)
+
+CREATE (motor_onix:Motor {tipo: "1.4", potencia: 95, cavalos: 120, combustivel: "Flex"})
+CREATE (car_onix:Car {marca: "Chevrolet", modelo: "Onix LT", ano: 2023, preco: 90000, cor: "Branco"})
+CREATE (car_onix)-[:PERTENCE]->(concessionaria)
+CREATE (car_onix)-[:TEM]->(motor_onix)
+
+CREATE (motor_sandero:Motor {tipo: "1.6", potencia: 118, cavalos: 118, combustivel: "Flex"})
+CREATE (car_sandero:Car {marca: "Renault", modelo: "Sandero", ano: 2023, preco: 60000, cor: "Prata"})
+CREATE (car_sandero)-[:PERTENCE]->(concessionaria)
+CREATE (car_sandero)-[:TEM]->(motor_sandero)
+
+CREATE (motor_compass:Motor {tipo: "2.0", potencia: 166, cavalos: 166, combustivel: "Flex"})
+CREATE (car_compass:Car {marca: "Jeep", modelo: "Compass", ano: 2023, preco: 130000, cor: "Cinza"})
+CREATE (car_compass)-[:PERTENCE]->(concessionaria)
+CREATE (car_compass)-[:TEM]->(motor_compass)
+
+CREATE (motor_corolla:Motor {tipo: "2.0", potencia: 169, cavalos: 177, combustivel: "Flex"})
+CREATE (car_corolla:Car {marca: "Toyota", modelo: "Corolla", ano: 2023, preco: 135000, cor: "Branco"})
+CREATE (car_corolla)-[:PERTENCE]->(concessionaria)
+CREATE (car_corolla)-[:TEM]->(motor_corolla)
+
+CREATE (motor_toro:Motor {tipo: "2.0", potencia: 170, cavalos: 200, combustivel: "Diesel"})
+CREATE (car_toro:Car {marca: "Fiat", modelo: "Toro", ano: 2023, preco: 150000, cor: "Vermelho"})
+CREATE (car_toro)-[:PERTENCE]->(concessionaria)
+CREATE (car_toro)-[:TEM]->(motor_toro)
